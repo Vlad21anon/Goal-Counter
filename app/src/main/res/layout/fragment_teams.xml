@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvChoosegame"
+        app:srcCompat="@drawable/logo_png" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvChoosegame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/presets"
+        android:textColor="@color/white"
+        android:fontFamily="@font/righteous"
+        android:textSize="@dimen/team_font_size"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        app:layout_constraintBottom_toTopOf="@id/rvGameList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGameList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvChoosegame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/recycler_margin"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivWinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/ic_playerw"
+        app:layout_constraintHeight_percent="0.17"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintTop_toBottomOf="@id/rvGameList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivLoser"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLoser"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/ic_playerl"
+        app:layout_constraintHeight_percent="0.17"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintTop_toBottomOf="@id/rvGameList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivWinner"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilWinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_team"
+        app:boxStrokeWidth="@dimen/box_stroke"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/ivWinner"
+        app:layout_constraintLeft_toLeftOf="@id/ivWinner"
+        app:layout_constraintRight_toRightOf="@id/ivWinner">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieFirst"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/righteous"
+            android:textColor="@color/white"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:maxLength="50"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName|textCapSentences"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLoser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/second_team"
+        app:boxStrokeWidth="@dimen/box_stroke"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/ivLoser"
+        app:layout_constraintStart_toStartOf="@id/ivLoser"
+        app:layout_constraintEnd_toEndOf="@id/ivLoser">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieSecond"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/righteous"
+            android:textColor="@color/white"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:maxLength="50"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName|textCapSentences"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:textSize="@dimen/team_font_size"
+        android:background="@drawable/button_style_disabled"
+        android:textColor="@color/white"
+        android:fontFamily="@font/righteous"
+        android:padding="@dimen/button_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilWinner"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="@string/back"
+        android:textSize="@dimen/button_font_size"
+        android:layout_margin="@dimen/button_margin"
+        android:textColor="@color/white"
+        android:fontFamily="@font/righteous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
