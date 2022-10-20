@@ -3,6 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable-v24/ic_basketball.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable-v24/ic_custom.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable-v24/ic_football.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable-v24/ic_handball.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable-v24/ic_hockey.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable-v24/ic_playerl.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable-v24/ic_playerw.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable-v24/ic_polo.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable-v24/ic_water_polo.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable/button_style.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable/button_style_disabled.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable/chose_icon.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/drawable/timer_style.xml" value="0.1505" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterS/GoalCounterV2/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterV2/app/src/main/res/drawable-v24/ic_basketball.xml" value="0.177" />
         <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterV2/app/src/main/res/drawable-v24/ic_playerl.xml" value="0.177" />
         <entry key="..\:/Users/Vlad/AndroidStudioProjects/GoalCounterV2/app/src/main/res/drawable-v24/ic_playerw.xml" value="0.177" />

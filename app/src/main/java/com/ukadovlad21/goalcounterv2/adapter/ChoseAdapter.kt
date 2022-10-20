@@ -7,8 +7,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ukadovlad21.goalcounterv2.R
 import com.ukadovlad21.goalcounterv2.databinding.IcChoseLayoutBinding
-import com.ukadovlad21.goalcounterv2.model.ImageModel
-import kotlinx.android.synthetic.main.ic_chose_layout.view.*
 
 class ChoseAdapter: RecyclerView.Adapter<ChoseAdapter.ChoseViewHolder>() {
     private var choseList = emptyList<Int>()
